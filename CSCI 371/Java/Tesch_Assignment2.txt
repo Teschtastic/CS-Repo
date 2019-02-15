@@ -1,0 +1,229 @@
+/***************************************
+ * 				      *
+ *    Sean Tesch       Assignment 2    *
+ *    		Due: 2/11/15   	      *
+ *    Making the Perfect Class         *
+ *                                     *
+ ***************************************/
+package PerfectClass;
+import java.io.BufferedWriter;
+/* - Importing required libraries - */
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.*;
+
+public class PerfectClass
+{
+	// Declaration of all ArrayLists
+	ArrayList<String> boy = new ArrayList<String>();
+	ArrayList<String> girl = new ArrayList<String>();
+	ArrayList<String> last = new ArrayList<String>();
+	ArrayList<String> gpa = new ArrayList<String>();
+	ArrayList<String> middle = new ArrayList<String>();
+	ArrayList<String> allNames = new ArrayList<String>();
+	
+	// Strings used to keep the first letter form re-appearing
+	String firstletters = "", lastletters = "";
+	
+	public static void main(String[] args)
+	{
+		// Declaration of the file reader
+		PerfectClass filename = new PerfectClass();
+		// Calls the function that writes to a file
+		filename.printClass();
+	}
+	
+	public void printClass()
+	{
+		// Calls the read-in functions
+		readInMale("boynames");
+		readInFemale("girlnames");
+		readInLast("lastnames");
+		giveMiddleInitial();
+		giveGPA();
+		
+		// Adds boy names to the ArrayList
+		for (int i = 0; i < boy.size(); i++)
+		{
+			allNames.add(boy.get(i));
+		}
+		// Adds girls to the ArrayList
+		for (int i =0; i < girl.size(); i++)
+		{
+			allNames.add(girl.get(i));
+		}
+		// Writes to a file the formatted class
+		for (int i = 0; i < allNames.size(); i++)
+		{
+			try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("PerfectClass", true))))
+			{
+			out.println(allNames.get(i) + " " + middle.get(i) + " " + last.get(i) + " " + gpa.get(i));
+			}
+			catch (IOException e)
+			{
+			System.out.println("File could not be created.");
+			}
+			//System.out.println(allNames.get(i) + " " + middle.get(i) + " " + last.get(i) + " " + gpa.get(i));
+		}
+	}
+ 
+	public void giveGPA()
+	{
+		// Creates random GPAs from 3.20 to 4.00
+		for (int i = 0; i < 20; i++)
+		{
+			double min = 3.20;
+			double max = 4.00;
+			Random random = new Random();
+			double rand = min + (max - min) * random.nextDouble();
+			String GP = String.format("%.2f", rand);
+			gpa.add(i, GP);
+			Collections.shuffle(gpa);
+			//System.out.println(gpa.get(i));
+		}
+	}
+	
+	public void giveMiddleInitial()
+	{
+		// Puts 20 letters in the middle ArrayList
+		String mid[] = new String[]
+		{
+		"A","B","C","D","E","F","H","J","K","L",
+		"M","N","O","P","R","S","T","U","V","X"
+		};
+		for (int i = 0; i < mid.length; i++)
+		{
+			middle.add(mid[i]);
+			//System.out.println(middle.get(i));
+		}
+	}
+	
+	/* - Same basic thing for each of the three functions - */
+ 	public void readInMale(String filename)
+	{	
+		int counter = 0;
+		Scanner in;
+		try
+		{
+			// Scans the read-in file
+			in = new Scanner(new FileReader(filename));
+			while (in.hasNextLine())
+			{
+				// Saves the name to a String for every line
+				String firstname = in.nextLine();
+				// Gives the first letter th letter String
+				String letter = firstname.substring(0, 1);
+				
+				// If the names doesn't start w/ letter,
+				// then add the name to boy, and add the
+				// first letter to letter String
+				if(!firstletters.contains(letter))
+				{
+					boy.add(firstname);
+					firstletters += letter;
+					counter++;
+				}
+				
+				// If counter gets to 10, break out of the function
+				if(counter == 10)
+				{
+					break;
+				}
+			}	
+			/*for (int i = 0; i < boy.size(); i++)
+			{
+				System.out.println(boy.get(i));
+			}*/
+			
+			in.close();
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("File " + filename + " did not exist!  Aborting");
+			System.exit(-1);
+		}
+	}
+	
+ 	// Same as boy
+	public void readInFemale(String filename)
+	{
+		int counter = 0;
+		Scanner in;
+		
+		try
+		{
+			in = new Scanner(new FileReader(filename));
+			while (in.hasNextLine())
+			{
+				String firstname = in.nextLine();
+				String letter = firstname.substring(0, 1);
+			
+				if(!firstletters.contains(letter))
+				{
+					girl.add(firstname);
+					firstletters += letter;
+					counter++;
+				}
+			
+				if(counter== 10)
+				{
+					break;
+				}
+			}
+			
+			/*for (int i = 0; i < girl.size(); i++)
+			{
+				System.out.println(girl.get(i));
+			}*/
+			
+			in.close();
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("File " + filename + " did not exist!  Aborting");
+			System.exit(-1);
+		}
+	}
+	
+	// Same as boy
+	public void readInLast(String filename)
+	{
+		int counter = 0;
+		Scanner in;
+		try
+		{
+			in = new Scanner(new FileReader(filename));
+			while (in.hasNextLine())
+			{
+				String firstname = in.nextLine();
+				String letter = firstname.substring(0, 1);
+			
+				if(!lastletters.contains(letter))
+				{
+					last.add(firstname);
+					lastletters += letter;
+					counter++;
+				}
+				if(counter == 20)
+				{
+					break;
+				}
+			}
+			/*for (int i = 0; i < last.size(); i++)
+			{
+				System.out.println(last.get(i));
+			}*/
+			in.close();
+		}
+		catch (FileNotFoundException e)
+		{
+			System.out.println("File " + filename + " did not exist!  Aborting");
+			System.exit(-1);
+		}
+	}
+}

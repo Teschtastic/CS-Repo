@@ -1,0 +1,60 @@
+CTesting isEmpty() on an empty queue, expecting 1
+N
+CTesting printQueue() on an empty queue, expecting nothing
+P
+CTesting getLength() on an empty queue, expecting 0
+L
+CTesting getFront() on an empty queue, expecting '/0'
+F
+CTesting dequeue() on an empty queue, expecting '/0' returned
+D
+CTesting ~Queue() on an empty queue, nothing should happen
+X
+CTesting enqueue() with data 'a'
+E a
+CTesting isEmpty(), expecting 0
+N
+CTesting printQueue(), expecting "a" on a single line
+P
+CTesting getLength(), expecting 1
+L
+CTesting getFront(), expecting 'a'
+F
+CTesting ~Queue(), nothing should be output
+X
+CTesting isEmpty(), expecting 1
+N
+CTesting printQueue(), expecting nothing
+P
+CTesting getLength(), expecting 0
+L
+CTesting getFront(), expecting '/0'
+F
+CTesting enqueue() twice with 'b' 'c'
+E b
+E c
+CTesting printQueue(), expecting "bc" with one letter per line
+P
+CTesting getLength(), expcting 2
+L
+CTesting dequeue(), expecting 'b'
+D
+CTesting printQueue(), expecting 'c' on a single line
+P
+CTesting enqueue() with the following inputs "defg"
+E d
+E e
+E f
+E g
+CTesting printQueue(), expecting, in order and one per line, "cdefg"
+P
+CTesting getLength(), expecting 5
+L
+CTesting getFront(), expecting 'c'
+F
+CTesting ~Queue(), no output
+X
+CTesting getLength(), expecting 0
+L
+CTesting isEmpty(), expecting 1
+N

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C47a" minimumToolsVersion="Automatic">
+    <entity name="Champ" syncable="YES">
+        <attribute name="assists" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="deaths" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="kd" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="kills" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="losses" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wins" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="wl" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Champ" positionX="-36" positionY="9" width="128" height="165"/>
+    </elements>
+</model>

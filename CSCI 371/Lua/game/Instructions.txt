@@ -1,0 +1,55 @@
+special feature: 
+new crafting verb and crafting headphones with three pieces to get candy
+// new character (smith) used to craft the headphones with the pieces
+// also added room 30 (Behind Pets Plus) that has a new item (catnip)
+
+To run:
+go into the game directory
+in the command line: lua main.lua
+
+Win 1:
+go north
+west
+south
+south
+west
+south
+east
+get catnip
+west
+north
+east
+south 
+east
+east
+east
+give catnip to cat
+get atm card
+west
+west
+west
+east
+north
+north
+east
+west
+west
+use atm
+use atm
+east
+east
+south
+buy candy from kyler
+
+win 2: pieces are in room 10 (NE SSM), room 8 (boiler room), and room 17 (airport)
+// can’t get the pieces working, but they are in their room
+// smith talks to you to let you know of the quest
+north
+east
+south
+talk smith
+north
+west
+south
+west
+get piece 2

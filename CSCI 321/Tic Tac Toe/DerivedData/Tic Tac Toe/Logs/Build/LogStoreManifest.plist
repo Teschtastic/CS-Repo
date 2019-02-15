@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>35CC04DA-FAC5-4A32-97EA-8B48F43A0DD8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>35CC04DA-FAC5-4A32-97EA-8B48F43A0DD8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Tic Tac Toe project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Tic Tac Toe</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build Tic Tac Toe</string>
+			<key>timeStartedRecording</key>
+			<real>562608895.34754097</real>
+			<key>timeStoppedRecording</key>
+			<real>562608897.23503995</real>
+			<key>title</key>
+			<string>Build Tic Tac Toe</string>
+			<key>uniqueIdentifier</key>
+			<string>35CC04DA-FAC5-4A32-97EA-8B48F43A0DD8</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

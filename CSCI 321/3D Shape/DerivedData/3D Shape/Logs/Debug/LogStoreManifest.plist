@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>2524E977-222E-452C-A8A2-D9E41123EEE1</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2524E977-222E-452C-A8A2-D9E41123EEE1.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738283.195328</real>
+			<key>timeStoppedRecording</key>
+			<real>563738295.11539602</real>
+			<key>title</key>
+			<string>Debug 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>2524E977-222E-452C-A8A2-D9E41123EEE1</string>
+		</dict>
+		<key>4FF6E81F-108A-412D-92A5-5996CB06538D</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>4FF6E81F-108A-412D-92A5-5996CB06538D.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563737905.27792203</real>
+			<key>timeStoppedRecording</key>
+			<real>563737990.40142906</real>
+			<key>title</key>
+			<string>Debug 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>4FF6E81F-108A-412D-92A5-5996CB06538D</string>
+		</dict>
+		<key>7DAC4A9B-9E09-42EA-8ACE-C61FB4A86C99</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>7DAC4A9B-9E09-42EA-8ACE-C61FB4A86C99.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738915.81939805</real>
+			<key>timeStoppedRecording</key>
+			<real>563738937.14743602</real>
+			<key>title</key>
+			<string>Debug 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>7DAC4A9B-9E09-42EA-8ACE-C61FB4A86C99</string>
+		</dict>
+		<key>A1EEEA86-E0EA-4ED0-8C9D-38B6FC2E4519</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>A1EEEA86-E0EA-4ED0-8C9D-38B6FC2E4519.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738084.45694304</real>
+			<key>timeStoppedRecording</key>
+			<real>563738101.87833703</real>
+			<key>title</key>
+			<string>Debug 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>A1EEEA86-E0EA-4ED0-8C9D-38B6FC2E4519</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

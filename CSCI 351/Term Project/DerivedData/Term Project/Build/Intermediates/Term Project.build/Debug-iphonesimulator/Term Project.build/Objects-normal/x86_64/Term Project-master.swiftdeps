@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "5a55c00766de03cacbb43b0c9510692c"
+build_time: [569871197, 61138000]
+inputs:
+  "/Users/Teschtastic/Documents/Classes/CSCI 351/Term Project/Term Project/champView.swift": !dirty [569871196, 0]
+  "/Users/Teschtastic/Documents/Classes/CSCI 351/Term Project/Term Project/AppDelegate.swift": !dirty [569871196, 0]
+  "/Users/Teschtastic/Documents/Classes/CSCI 351/Term Project/Term Project/gameView.swift": !dirty [569871196, 0]

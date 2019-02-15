@@ -1,0 +1,285 @@
+/***************************************
+ * 									   *
+ *    Sean Tesch       Assignment 1    *
+ *    		Due: 1/27/15               *
+ *    Java Stack Arithmetic            *
+ *                                     *
+ ***************************************/
+
+/* - Importing required libraries - */
+package Arithmatic;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Stack;
+
+/* - Declaring the main class - */
+public class Arithmatic
+	{
+	/* - Initializing and array of Strings, a stack variable, and a line number counter - */
+	ArrayList<Integer> choice;
+	Stack<Integer> stack;
+	int lineNum = 0;
+	
+	/* - Function used for reading from a file - */
+	public void fileRead(String filename)
+		{
+			choice = new ArrayList<Integer>();
+			stack = new Stack<Integer>();
+			Scanner in;
+			int tempNum;
+			try
+				{
+				in = new Scanner(new FileReader(filename));
+				while (in.hasNextLine())
+					{
+					String line[] = in.nextLine().split("_");
+					lineNum++;
+					for (int i = 0; i < line.length; i++)
+						{
+						try
+							{
+							tempNum = Integer.parseInt(line[i]);
+							if (tempNum > 9 || tempNum < 0)
+								{
+								System.out.println("Line " + lineNum + " is invalid.");
+								}
+							else
+								{
+								if (tempNum != Integer.parseInt(line[i]))
+									{
+									stack.push(0);
+									System.out.println("Line " + lineNum + " is invalid");
+									}
+								else
+									{
+									choice.add(tempNum);
+									}
+								}
+							}
+						catch (Exception crap)
+							{
+							System.out.println("Can't parse int");
+							System.out.println("Line " + lineNum + " is invalid");
+							}
+						}
+					if (choice.size() == 0)
+						{
+						System.out.println("File "+filename + " was blank!  Aborting!");
+						System.exit(-1);
+						}
+
+					arrayParse();
+					try
+						{
+						int test = stack.pop();
+						System.out.println("Answer: " + test);
+						
+						if (test != 1)
+							{
+								System.out.println("Line " + lineNum + " is invalid");
+							}
+						else
+							{
+								System.out.println("Line " + lineNum + " is valid");
+							}
+						}
+					catch (Exception e)
+						{
+						System.out.println("There is nothing in the stack to pop");
+						}	
+					choice.clear();
+					stack.clear();
+					}
+				in.close();
+				}
+			catch (FileNotFoundException e)
+				{
+				System.out.println("File " + filename + " did not exist!  Aborting");
+				System.exit(-1);
+				}
+			}
+	
+	/* - Function for dealing with the different cases - */
+	public void arrayParse()
+		{
+			
+		for (int i = 0; i < choice.size(); i++)
+			{
+				
+			int num1;
+			int num2;
+			int totalNum;
+			int currNum = choice.get(i);
+			
+			switch(currNum)
+				{
+				case 0:
+					try
+						{
+						num1 = stack.pop();
+						num2 = stack.pop();
+						totalNum = num1 + num2;
+						stack.push(totalNum);
+						}
+					catch(Exception errors)
+						{
+						System.out.println("There is nothing to pop");
+						}
+					break;
+				case 1:
+					try
+						{
+						num1 = stack.pop();
+						num2 = stack.pop();
+						totalNum = num2 - num1;
+						stack.push(totalNum);
+						}
+					catch(Exception errors)
+						{
+						System.out.println("There is nothing to pop");
+						}
+					break;
+				case 2:
+					try
+						{
+						num1 = stack.pop();
+						num2 = stack.pop();
+						totalNum = num1 * num2;
+						stack.push(totalNum);
+						}
+					catch(Exception errors)
+						{
+							System.out.println("There is nothing to pop");
+						}
+					break;
+				case 3:
+					try
+						{
+						num1 = stack.pop();
+						num2 = stack.pop();
+						if (num2 == 0)
+							{
+							stack.push(0);
+							System.out.println("Divide by zero error");
+							break;
+							}
+						else
+							{
+							totalNum = num1 / num2;
+							stack.push(totalNum);
+							}
+						}
+					catch(Exception errors)
+						{
+							System.out.println("There is nothing to pop");
+						}
+					break;
+				 case 4:
+					 try
+						 {
+						 num1 = stack.pop();
+						 num2 = stack.pop();
+						 if (num1 == 0)
+							 {
+							 System.out.println("Mod by zero error");
+							 stack.push(0);
+							 break;
+							 }
+						 else if (num2 == 0)
+							 {
+							 System.out.println("Mod by zero error");
+							 stack.push(0);
+							 break;
+							 }
+						 else
+							 {
+							 totalNum = num1 % num2;
+							 stack.push(totalNum);
+							 }
+						 }
+					 catch(Exception errors)
+						{
+						System.out.println("There is nothing to pop");
+						}
+					break;
+				 case 5:
+					 try
+						 {
+						 num1 = choice.get(i + 1);
+						 totalNum = num1;
+							System.out.println(totalNum);
+						 stack.push(totalNum);
+						 i++;
+						 }
+					 catch(Exception errors)
+						{
+						System.out.println("There is nothing to push");
+						}
+					 break;
+					 
+				 case 6:
+					 try
+						 {
+						 num1 = stack.pop();
+						 num2 = stack.pop();
+						 totalNum = num1 & num2;
+						 stack.push(totalNum);
+						 }
+					 catch (Exception errors)
+					 	{
+					 	System.out.println("There is nothing to pop");
+					 	}
+				 case 7:
+					 try
+						 {
+						 num1 = stack.pop();
+						 num2 = stack.pop();
+						 totalNum = num1 | num2;
+						 stack.push(totalNum);
+						 }
+					 catch (Exception errors)
+					 	{
+					 	System.out.println("There is nothing to pop");
+					 	}
+				 case 8:
+					 try
+						 {
+						 num1 = stack.pop();
+						 totalNum = num1 * num1;
+						 stack.push(totalNum);
+						 }
+					 catch(Exception errors)
+						{
+						System.out.println("There is nothing to pop");
+						}
+					 break;
+				 case 9:
+					 try
+						 {
+						 if (stack.isEmpty() != true)
+							 {
+							 stack.pop();
+							 }
+						 else
+							 {
+							 
+							 }
+						 }
+					 catch(Exception errors)
+						{
+						System.out.println("There is nothing to pop");
+						}
+				 break;
+				}
+			}
+		}
+
+	/* - Declaring the main function - */
+	public static void main(String[] math)
+		{
+		Arithmatic filename = new Arithmatic();
+		filename.fileRead("source.data");
+		}
+	}

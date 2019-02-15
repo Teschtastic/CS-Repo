@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C924FE1DF71E0F0039E623 /* shapedraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06C924FD1DF71E0F0039E623 /* shapedraw.cpp */; };
+		06C925081DF71E490039E623 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C925051DF71E490039E623 /* GLKit.framework */; };
+		06C925091DF71E490039E623 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C925061DF71E490039E623 /* GLUT.framework */; };
+		06C9250A1DF71E490039E623 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C925071DF71E490039E623 /* OpenGL.framework */; };
+		06C9250F1DF71E620039E623 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9250B1DF71E620039E623 /* SDL2_image.framework */; };
+		06C925101DF71E620039E623 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9250C1DF71E620039E623 /* SDL2_mixer.framework */; };
+		06C925111DF71E620039E623 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9250D1DF71E620039E623 /* SDL2_ttf.framework */; };
+		06C925121DF71E620039E623 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9250E1DF71E620039E623 /* SDL2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06C924F81DF71E0F0039E623 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06C924FA1DF71E0F0039E623 /* 3D Shape */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "3D Shape"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C924FD1DF71E0F0039E623 /* shapedraw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shapedraw.cpp; sourceTree = "<group>"; };
+		06C925051DF71E490039E623 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		06C925061DF71E490039E623 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		06C925071DF71E490039E623 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		06C9250B1DF71E620039E623 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		06C9250C1DF71E620039E623 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		06C9250D1DF71E620039E623 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		06C9250E1DF71E620039E623 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		06C925131DF71EF70039E623 /* myshape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myshape.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C924F71DF71E0F0039E623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C9250F1DF71E620039E623 /* SDL2_image.framework in Frameworks */,
+				06C925101DF71E620039E623 /* SDL2_mixer.framework in Frameworks */,
+				06C925111DF71E620039E623 /* SDL2_ttf.framework in Frameworks */,
+				06C925121DF71E620039E623 /* SDL2.framework in Frameworks */,
+				06C925081DF71E490039E623 /* GLKit.framework in Frameworks */,
+				06C925091DF71E490039E623 /* GLUT.framework in Frameworks */,
+				06C9250A1DF71E490039E623 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C924F11DF71E0F0039E623 = {
+			isa = PBXGroup;
+			children = (
+				06C924FC1DF71E0F0039E623 /* 3D Shape */,
+				06C924FB1DF71E0F0039E623 /* Products */,
+				06C925041DF71E490039E623 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		06C924FB1DF71E0F0039E623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C924FA1DF71E0F0039E623 /* 3D Shape */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06C924FC1DF71E0F0039E623 /* 3D Shape */ = {
+			isa = PBXGroup;
+			children = (
+				06C924FD1DF71E0F0039E623 /* shapedraw.cpp */,
+				06C925131DF71EF70039E623 /* myshape.h */,
+			);
+			path = "3D Shape";
+			sourceTree = "<group>";
+		};
+		06C925041DF71E490039E623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C9250B1DF71E620039E623 /* SDL2_image.framework */,
+				06C9250C1DF71E620039E623 /* SDL2_mixer.framework */,
+				06C9250D1DF71E620039E623 /* SDL2_ttf.framework */,
+				06C9250E1DF71E620039E623 /* SDL2.framework */,
+				06C925051DF71E490039E623 /* GLKit.framework */,
+				06C925061DF71E490039E623 /* GLUT.framework */,
+				06C925071DF71E490039E623 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C924F91DF71E0F0039E623 /* 3D Shape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C925011DF71E0F0039E623 /* Build configuration list for PBXNativeTarget "3D Shape" */;
+			buildPhases = (
+				06C924F61DF71E0F0039E623 /* Sources */,
+				06C924F71DF71E0F0039E623 /* Frameworks */,
+				06C924F81DF71E0F0039E623 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "3D Shape";
+			productName = "3D Shape";
+			productReference = 06C924FA1DF71E0F0039E623 /* 3D Shape */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C924F21DF71E0F0039E623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sean Tesch";
+				TargetAttributes = {
+					06C924F91DF71E0F0039E623 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 06C924F51DF71E0F0039E623 /* Build configuration list for PBXProject "3D Shape" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06C924F11DF71E0F0039E623;
+			productRefGroup = 06C924FB1DF71E0F0039E623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C924F91DF71E0F0039E623 /* 3D Shape */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C924F61DF71E0F0039E623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C924FE1DF71E0F0039E623 /* shapedraw.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		06C924FF1DF71E0F0039E623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		06C925001DF71E0F0039E623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		06C925021DF71E0F0039E623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06C925031DF71E0F0039E623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C924F51DF71E0F0039E623 /* Build configuration list for PBXProject "3D Shape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C924FF1DF71E0F0039E623 /* Debug */,
+				06C925001DF71E0F0039E623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C925011DF71E0F0039E623 /* Build configuration list for PBXNativeTarget "3D Shape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C925021DF71E0F0039E623 /* Debug */,
+				06C925031DF71E0F0039E623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06C924F21DF71E0F0039E623 /* Project object */;
+}

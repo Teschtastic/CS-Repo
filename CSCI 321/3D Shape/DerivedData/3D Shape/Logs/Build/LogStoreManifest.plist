@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>232E502D-E305-486F-B44E-BC0435740F31</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>232E502D-E305-486F-B44E-BC0435740F31.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563737901.96306896</real>
+			<key>timeStoppedRecording</key>
+			<real>563737905.31624401</real>
+			<key>title</key>
+			<string>Build 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>232E502D-E305-486F-B44E-BC0435740F31</string>
+		</dict>
+		<key>6E469B7B-F7F3-41C1-A395-CF6535338773</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6E469B7B-F7F3-41C1-A395-CF6535338773.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738283.11648595</real>
+			<key>timeStoppedRecording</key>
+			<real>563738283.21660197</real>
+			<key>title</key>
+			<string>Build 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>6E469B7B-F7F3-41C1-A395-CF6535338773</string>
+		</dict>
+		<key>9DE14CDE-6CC6-4EFC-ADA9-7AF7D9EC3616</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DE14CDE-6CC6-4EFC-ADA9-7AF7D9EC3616.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738915.61147499</real>
+			<key>timeStoppedRecording</key>
+			<real>563738915.87604296</real>
+			<key>title</key>
+			<string>Build 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>9DE14CDE-6CC6-4EFC-ADA9-7AF7D9EC3616</string>
+		</dict>
+		<key>CBC424DA-A207-4D95-A5DB-00EBC0517AC3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CBC424DA-A207-4D95-A5DB-00EBC0517AC3.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>3D Shape project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>3D Shape</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build 3D Shape</string>
+			<key>timeStartedRecording</key>
+			<real>563738084.086308</real>
+			<key>timeStoppedRecording</key>
+			<real>563738084.62052798</real>
+			<key>title</key>
+			<string>Build 3D Shape</string>
+			<key>uniqueIdentifier</key>
+			<string>CBC424DA-A207-4D95-A5DB-00EBC0517AC3</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
